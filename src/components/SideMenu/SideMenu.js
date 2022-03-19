@@ -1,7 +1,21 @@
-import React from 'react'
-import { FaChevronLeft, FaBookmark, FaClock, FaThList, FaChartLine, } from 'react-icons/fa'
+import { FaChevronLeft, FaBookmark, FaClock, FaThList } from 'react-icons/fa'
+import { useSelector } from 'react-redux'
+import { tasksState } from '../../features/tasksSlice'
 
 const SideMenu = ({ toggleMenu }) => {
+    const { tasks } = useSelector(tasksState)
+
+    const getScore = () => {
+        if (tasks.length) {
+            const completed = tasks.filter(({ isComplete }) => isComplete)
+            const percentage = completed.length / tasks.length
+            if (percentage < 0.50) return 'Poor'
+            if (percentage >= 0.50 && percentage <= 0.70) return 'Good'
+            if (percentage > 0.70) return 'Excellent'
+        }
+        return (<span>Add tasks to show consistency</span>)
+    }
+
     return (
         <div className='side-menu'>
             <div className="inner-side">
@@ -27,11 +41,9 @@ const SideMenu = ({ toggleMenu }) => {
                     </li>
                 </ul>
 
-                <FaChartLine className='chart-line' />
-
                 <div className="performance">
-                    <p>Good</p>
-                    <h3>Consistance</h3>
+                    <p>{getScore()}</p>
+                    {tasks.length ? <h3>consistency</h3> : null}
                 </div>
             </div>
 

@@ -23,11 +23,19 @@ const Categories = ({ type, setType }) => {
         for (let task of tasks) {
             if (task.type === 'personal') personal.total += 1
             if (task.type === 'personal' && task.isComplete) personal.complete += 1
-            personal.percentage = (personal.complete / personal.total) * 100
+            if (!personal.total) {
+                personal.total = 0
+            } else {
+                personal.percentage = (personal.complete / personal.total) * 100
+            }
 
             if (task.type === 'business') business.total += 1
             if (task.type === 'business' && task.isComplete) business.complete += 1
-            business.percentage = (business.complete / business.total) * 100
+            if (!business.total) {
+                business.percentage = 0
+            } else {
+                business.percentage = (business.complete / business.total) * 100
+            }
         }
 
         setProgress({ personal, business })
