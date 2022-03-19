@@ -10,7 +10,7 @@ Alex takes full credit for the design. I just turned it into a real life app :/
 2. Redux Toolkit
 3. Local Storage
 4. CSSTransition (React Transition Group)
-5. Add, Update and Remove Tasks
+5. Add, Update, Complete, Redo and Remove Tasks
 6. Search + Autocomplete
 7. Performance Meter/Bar 
 8. Performance Score
