@@ -10,3 +10,8 @@ Alex takes full credit for the design. I just turned it into a real life app :/
 2. Redux Toolkit
 3. Local Storage
 4. CSSTransition (React Transition Group)
+
+## Screenshots
+
+<img width="608" alt="Screen Shot 2022-03-20 at 12 56 13 AM" src="https://user-images.githubusercontent.com/89678609/159139814-1245dc17-16f7-45cc-a58b-e2051e46156a.png">
+<img width="608" alt="Screen Shot 2022-03-20 at 12 56 37 AM" src="https://user-images.githubusercontent.com/89678609/159139822-36a6a61c-2ba1-402f-9926-f47eba92747f.png">
