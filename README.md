@@ -1,6 +1,6 @@
 ## Summary
 
-This is a fully functional task manager application inspired by Alex Arutuynov's design found on https://dribbble.com/shots/14153121-ToDo-App-Dark-Theme
+This is a cool task manager application inspired by Alex Arutuynov's design found on https://dribbble.com/shots/14153121-ToDo-App-Dark-Theme
 
 Alex takes full credit for the design. I just turned it into a real life app :/
 
@@ -10,6 +10,10 @@ Alex takes full credit for the design. I just turned it into a real life app :/
 2. Redux Toolkit
 3. Local Storage
 4. CSSTransition (React Transition Group)
+5. Add, Update and Remove Tasks
+6. Search + Autocomplete
+7. Performance Meter/Bar 
+8. Performance Score
 
 ## Screenshots
 
