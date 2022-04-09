@@ -4,7 +4,7 @@ This is a cool task manager application inspired by Alex Arutuynov's design foun
 
 Alex takes full credit for the design. I just turned it into a real life app :/
 
-View here: ramigiorge.github.io/taskmanager
+View here: https://ramigiorge.github.io/taskmanager/
 
 ## Features
 
