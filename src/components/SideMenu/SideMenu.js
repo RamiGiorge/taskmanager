@@ -1,6 +1,7 @@
 import { FaChevronLeft, FaBookmark, FaClock, FaThList } from 'react-icons/fa'
 import { useSelector } from 'react-redux'
 import { tasksState } from '../../features/tasksSlice'
+import moero from "../../assets/moero.jpeg";
 
 const SideMenu = ({ toggleMenu }) => {
     const { tasks } = useSelector(tasksState)
@@ -17,13 +18,13 @@ const SideMenu = ({ toggleMenu }) => {
     }
 
     return (
-        <div className='side-menu'>
+        <aside className='side-menu'>
             <div className="inner-side">
                 <button onClick={toggleMenu} className='pointer back-btn'>
                     <FaChevronLeft />
                 </button>
                 <div className="profile-img-container">
-                    <img src="./favicon.png" alt="profile" className='profile-img' />
+                    <img src={moero} alt="profile" className='profile-img' />
                 </div>
                 <h1>Rami George</h1>
                 <ul className="submenu">
@@ -46,8 +47,7 @@ const SideMenu = ({ toggleMenu }) => {
                     {tasks.length ? <h3>consistency</h3> : null}
                 </div>
             </div>
-
-        </div>
+        </aside>
     )
 }
 

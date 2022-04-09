@@ -13,6 +13,20 @@ body {
   font-family: 'Abel', sans-serif;
 }
 
+button {
+  display: grid;
+  align-items: center;
+  border: none;
+  outline: none;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
 .app {
   width: 400px;
   border-radius: 20px;
@@ -23,7 +37,7 @@ body {
 
 .side-menu {
   position: absolute;
-  background: #0A155A;
+  background: #0a155a;
   color: #bbc2d8;
   width: 100%;
   height: 100%;
@@ -54,7 +68,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid #3D47AF;
+  border: 1px solid #3d47af;
   border-radius: 50%;
   align-self: flex-end;
 }
@@ -74,7 +88,7 @@ body {
 
 .inner-side > h1 {
   font-size: 40px;
-} 
+}
 
 .submenu {
   list-style: none;
@@ -96,7 +110,7 @@ body {
 }
 
 .submenu-icon {
-  color: #3D47AF;
+  color: #3d47af;
   font-size: 20px;
 }
 
@@ -107,7 +121,7 @@ body {
 }
 
 .performance > p {
-  color: #3D47AF;
+  color: #3d47af;
 }
 
 .side-slide-enter {
@@ -116,12 +130,12 @@ body {
 
 .side-slide-enter-active {
   transform: translateX(0);
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
 }
 
 .card {
   width: 100%;
-  background: #3D47AF;
+  background: #3d47af;
   /* background: radial-gradient(#3D47AF, #4f74ff 150%); */
   border-radius: 20px;
   padding: 20px 30px;
@@ -129,7 +143,7 @@ body {
   flex-direction: column;
   gap: 30px;
   position: relative;
-  transition: transform .4s ease;
+  transition: transform 0.4s ease;
   z-index: 9;
 }
 
@@ -151,7 +165,7 @@ h4 {
 
 .search-form-transition-enter-active {
   width: 100%;
-  transition: width .2s linear;
+  transition: width 0.2s linear;
 }
 
 .search-form-transition-exit {
@@ -160,7 +174,7 @@ h4 {
 
 .search-form-transition-exit-active {
   width: 0;
-  transition: width .2s linear;
+  transition: width 0.2s linear;
 }
 
 .search-form-container {
@@ -172,7 +186,7 @@ h4 {
 .search-form {
   width: 100%;
   height: 100%;
-  background: #0A155A;
+  background: #0a155a;
   border-radius: 10px;
   display: flex;
   align-items: center;
@@ -213,18 +227,18 @@ h4 {
   gap: 5px;
   backdrop-filter: blur(10px);
   background-color: rgba(255, 255, 255, 0.281);
-  color: #0A155A;
+  color: #0a155a;
   font-size: 18px;
 }
 
 .search-form li {
   font-weight: 700;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .search-form li:hover {
   font-size: 20px;
-  color: #3D47AF;
+  color: #3d47af;
 }
 
 .toolbar {
@@ -264,18 +278,18 @@ h4 {
 .category {
   flex: 1;
   height: 100px;
-  background: #0A155A;
+  background: #0a155a;
   color: white;
   border-radius: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between  ;
+  justify-content: space-between;
   padding: 15px;
   box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
 }
 
 .category > p {
-  color: #7D80AA;
+  color: #7d80aa;
   font-weight: bold;
   font-size: 12px;
 }
@@ -283,7 +297,7 @@ h4 {
 .categories .bar {
   margin-top: 8px;
   height: 2px;
-  background: #7D80AA;
+  background: #7d80aa;
   border-radius: 20px;
   position: relative;
 }
@@ -292,17 +306,17 @@ h4 {
   position: absolute;
   height: 100%;
   background: #d103fc;
-  transition: all .6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
 .bar > .p-progress-bar {
   position: absolute;
   height: 100%;
   background: #4f74ff;
-  transition: all .6s ease-in;
+  transition: all 0.6s ease-in;
 }
 
-  .b-progress-bar::after {
+.b-progress-bar::after {
   content: '';
   position: absolute;
   right: 0;
@@ -312,7 +326,7 @@ h4 {
   background-color: #d103fc;
 }
 
-  .p-progress-bar::after {
+.p-progress-bar::after {
   content: '';
   position: absolute;
   right: 0;
@@ -332,7 +346,7 @@ h4 {
 }
 
 .task {
-  background: #0A155A;
+  background: #0a155a;
   padding: 8px 10px;
   border-radius: 10px;
   color: #bbc2d8;
@@ -341,7 +355,7 @@ h4 {
   align-items: center;
   gap: 10px;
   position: relative;
-  transition: All .4s ease;
+  transition: All 0.4s ease;
 }
 
 .task > span {
@@ -372,7 +386,7 @@ h4 {
 
 .add-form-transition-enter {
   opacity: 0;
-  transform: scale(.1);
+  transform: scale(0.1);
 }
 
 .add-form-transition-enter-active {
@@ -388,7 +402,7 @@ h4 {
 
 .add-form-transition-exit-active {
   opacity: 0;
-  transform: scale(.1);
+  transform: scale(0.1);
   transition: opacity 100ms ease-out, transform 100ms linear;
 }
 
@@ -421,8 +435,8 @@ h4 {
 }
 
 .type-group > label {
-  color: #0A155A;
-  transition: all ease-in-out .2s;
+  color: #0a155a;
+  transition: all ease-in-out 0.2s;
   padding: 3px 20px;
 }
 
@@ -452,7 +466,7 @@ h4 {
   outline: none;
   border: none;
   background: white;
-  color: #0A155A;
+  color: #0a155a;
   font-weight: 700;
 }
 
@@ -465,10 +479,12 @@ h4 {
 }
 
 .add-form .cancel-action {
-  color: #0A155A;
+  color: #0a155a;
 }
 
-.cancel-action, .check-icon, .edit-icon {
+.cancel-action,
+.check-icon,
+.edit-icon {
   font-size: 20px;
 }
 
@@ -486,7 +502,7 @@ h4 {
   justify-content: center;
   overflow: hidden;
   z-index: 1;
-  transition: transform .2s ease;
+  transition: transform 0.2s ease;
 }
 
 .add-btn::before {
@@ -505,18 +521,18 @@ h4 {
 
 .add-icon {
   font-size: 60px;
-  transition: color .6s ease;
+  transition: color 0.6s ease;
 }
 
 .complete {
   text-decoration: line-through;
-  opacity: .8;
+  opacity: 0.8;
   color: #4f74ff;
 }
 
 .show {
   visibility: visible;
-  animation: show .3s ease-in;
+  animation: show 0.3s ease-in;
 }
 
 .hide {
@@ -525,11 +541,19 @@ h4 {
 }
 
 @keyframes show {
-  from {opacity: 0;}
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes hide {
-  from {opacity: 1;}
-  to {opacity: 0;}
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }

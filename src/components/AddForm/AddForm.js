@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { FaCheck, FaTimes, FaPlusCircle } from 'react-icons/fa'
 import { useDispatch } from 'react-redux'
-import { addTask, store } from '../../features/tasksSlice'
+import { addTask } from '../../features/tasksSlice'
 import { v4 as uuidv4 } from 'uuid';
 import { CSSTransition } from 'react-transition-group';
 
@@ -34,7 +34,6 @@ const Form = ({ type, setType }) => {
                 isEditing: false
             }
             dispatch(addTask(task))
-            dispatch(store())
             setInputText('')
         }
     }
