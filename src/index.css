@@ -63,8 +63,8 @@ button:disabled {
   background: none;
   color: #bbc2d8;
   outline: none;
-  height: 40px;
-  width: 40px;
+  min-height: 40px;
+  min-width: 40px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -84,7 +84,6 @@ button:disabled {
 .profile-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .inner-side > h1 {
@@ -136,8 +135,8 @@ button:disabled {
 
 .card {
   width: 100%;
+  min-height: 600px;
   background: #3d47af;
-  /* background: radial-gradient(#3D47AF, #4f74ff 150%); */
   border-radius: 20px;
   padding: 20px 30px;
   display: flex;

@@ -42,6 +42,7 @@ const SideMenu = ({ toggleMenu }) => {
                 <button onClick={toggleMenu} className='pointer back-btn'>
                     <FaChevronLeft />
                 </button>
+
                 <div className="profile-img-container">
                     <img src={img ? img : user} alt="profile" className='profile-img' />
                 </div>
